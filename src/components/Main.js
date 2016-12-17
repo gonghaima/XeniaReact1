@@ -8,9 +8,33 @@ let yeomanImage = require('../images/yeoman.png');
 class AppComponent extends React.Component {
   render() {
     return (
-      <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
+      <div className="mdl-layout mdl-js-layout demo-layout-transparent">
+        <header className="mdl-layout__header mdl-layout__header--transparent">
+          <div className="mdl-layout__header-row">
+            
+      <span className="mdl-layout-title">Title</span>
+            
+      <div className="mdl-layout-spacer"></div>
+            
+      <nav className="mdl-navigation">
+              <a className="mdl-navigation__link" href="">Link</a>
+              <a className="mdl-navigation__link" href="">Link</a>
+              <a className="mdl-navigation__link" href="">Link</a>
+              <a className="mdl-navigation__link" href="">Link</a>
+            </nav>
+          </div>
+        </header>
+        <div className="mdl-layout__drawer">
+          <span className="mdl-layout-title">Title</span>
+          <nav className="mdl-navigation">
+            <a className="mdl-navigation__link" href="">Link</a>
+            <a className="mdl-navigation__link" href="">Link</a>
+            <a className="mdl-navigation__link" href="">Link</a>
+            <a className="mdl-navigation__link" href="">Link</a>
+          </nav>
+        </div>
+        <main className="mdl-layout__content">
+        </main>
       </div>
     );
   }

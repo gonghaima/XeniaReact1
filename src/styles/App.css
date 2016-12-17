@@ -1,5 +1,5 @@
 /* Base Application Styles */
-body {
+/*body {
   color: #fff;
   background: #222;
 }
@@ -18,4 +18,18 @@ body {
   border: 1px solid #000;
   border-width: 1px 0;
   background: #666;
+}*/
+body {
+  color: #000;
+  background: #222;
+}
+.demo-layout-transparent {
+  /*background: url('../src/images/transparent.jpg') center / cover;*/
+  background: url('../images/header.png') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
 }
