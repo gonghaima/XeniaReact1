@@ -19,9 +19,14 @@
   border-width: 1px 0;
   background: #666;
 }*/
+
 body {
   color: #fff;
   background: #000;
+}
+
+.mdl-layout-title{
+font-family: 'Lucida Sans' ,'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 .demo-layout-transparent {
   /*background: url('../src/images/transparent.jpg') center / cover;*/
@@ -33,6 +38,15 @@ body {
      your background is light. */
   color: white;
 }
-.mdl-mini-footer{
-  background-color: #000;
+footer.mdl-mini-footer{
+  background-color: #fff;
+  padding: 13px 16px;
+}
+
+
+.trapezoid {
+  border-bottom: 66px solid red;
+	border-left: 50px solid transparent;
+	height: 0;
+  width: 916px;
 }
