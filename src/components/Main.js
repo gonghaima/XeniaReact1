@@ -7,10 +7,10 @@ import HomeContent from '../components/home/content.jsx';
 class AppComponent extends React.Component {
 
   componentWillMount() {
-    console.log('before mt HomeContent: ' + HomeContent);
+    
   }
   componentDidMount() {
-    console.log('after mt HomeContent: ' + HomeContent);
+    
   }
 
   render() {
@@ -44,8 +44,6 @@ class AppComponent extends React.Component {
 
 
 
-
-
           </div></header>
         <div className="mdl-layout__drawer">
 
@@ -64,7 +62,7 @@ class AppComponent extends React.Component {
 
 
           <nav className="mdl-navigation">
-            <a className="mdl-navigation__link" href="">Bookings</a>
+            <a id="submenu" className="mdl-navigation__link" href="#">Bookings</a>
             <a className="mdl-navigation__link" href="">Groups</a>
             <a className="mdl-navigation__link" href="">Functions</a>
             <a className="mdl-navigation__link" href="">Interfaces</a>
@@ -72,6 +70,17 @@ class AppComponent extends React.Component {
             <a className="mdl-navigation__link" href="">Company</a>
             <a className="mdl-navigation__link" href="">Contact</a>
           </nav></div>
+
+        <ul className="mdl-menu mdl-js-menu mdl-js-ripple-effect"
+          htmlFor="submenu">
+          <li className="mdl-menu__item">Some Action</li>
+          <li className="mdl-menu__item">Another Action</li>
+          <li disabled className="mdl-menu__item">Disabled Action</li>
+          <li className="mdl-menu__item">Yet Another Action</li>
+        </ul>
+
+
+
         <main className="mdl-layout__content  demo-layout-transparent">
 
           <HomeContent />
