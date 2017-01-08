@@ -51,8 +51,8 @@ class AppComponent extends React.Component {
               </div>
 
               <nav className="mdl-navigation">
-                  <a id="submenu" className="mdl-navigation__link" href="#">Bookings</a>
-                  <a className="mdl-navigation__link" href="">Groups</a>
+                  <a id="bookings_menu" className="mdl-navigation__link" href="#">Bookings</a>
+                  <a id="groups_menu" className="mdl-navigation__link" href="#">Groups</a>
                   <a className="mdl-navigation__link" href="">Functions</a>
                   <a className="mdl-navigation__link" href="">Interfaces</a>
                   <a className="mdl-navigation__link" href="">Reports</a>
@@ -61,11 +61,17 @@ class AppComponent extends React.Component {
               </nav>
           </div>
 
-          <ul className="mdl-menu mdl-js-menu mdl-js-ripple-effect" htmlFor="submenu">
+          <ul className="mdl-menu mdl-js-menu mdl-js-ripple-effect" htmlFor="bookings_menu">
               <li className="mdl-menu__item">Bookings</li>
               <li className="mdl-menu__item">Split Bookings</li>
               <li disabled className="mdl-menu__item">Bump Bookings</li>
               <li className="mdl-menu__item">Check in/out</li>
+          </ul>
+
+          <ul className="mdl-menu mdl-js-menu mdl-js-ripple-effect" htmlFor="groups_menu">
+              <li className="mdl-menu__item">Enquiries and Quotes</li>
+              <li className="mdl-menu__item">Group Bookings</li>
+              <li disabled className="mdl-menu__item">Tour Packages</li>
           </ul>
 
           <main className="mdl-layout__content  demo-layout-transparent">

@@ -1219,7 +1219,8 @@ MaterialMenu.prototype.init = function () {
             if (forEl) {
                 this.forElement_ = forEl;
                 forEl.addEventListener('click', this.handleForClick_.bind(this));
-				forEl.addEventListener('mouseover', this.handleForClick_.bind(this));
+				// forEl.addEventListener('mouseover', this.handleForClick_.bind(this));
+				// forEl.addEventListener('mouseleave', this.handleForClick_.bind(this));
                 forEl.addEventListener('keydown', this.handleForKeyboardEvent_.bind(this));
             }
         }
@@ -1298,7 +1299,8 @@ MaterialMenu.prototype.handleForClick_ = function (evt) {
         } else {
             // Default: position below the "for" element, aligned to its left.
             this.container_.style.left = 241 + 'px';
-            this.container_.style.top = this.forElement_.offsetTop + this.forElement_.offsetHeight + 'px';
+            // this.container_.style.top = this.forElement_.offsetTop + this.forElement_.offsetHeight + 'px';
+            this.container_.style.top = this.forElement_.offsetTop + 'px';
         }
     }
     this.toggle(evt);
