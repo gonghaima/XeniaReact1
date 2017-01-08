@@ -1219,8 +1219,7 @@ MaterialMenu.prototype.init = function () {
             if (forEl) {
                 this.forElement_ = forEl;
                 forEl.addEventListener('click', this.handleForClick_.bind(this));
-				// forEl.addEventListener('mouseover', this.handleForClick_.bind(this));
-				// forEl.addEventListener('mouseleave', this.handleForClick_.bind(this));
+				forEl.addEventListener('mouseover', this.handleForClick_.bind(this));
                 forEl.addEventListener('keydown', this.handleForKeyboardEvent_.bind(this));
             }
         }
@@ -1303,8 +1302,21 @@ MaterialMenu.prototype.handleForClick_ = function (evt) {
             this.container_.style.top = this.forElement_.offsetTop + 'px';
         }
     }
+    this.resetSubMenu();
     this.toggle(evt);
 };
+
+
+/** Steven Edited
+ * Reset & hide all submenus
+ */
+MaterialMenu.prototype.resetSubMenu = function () {
+        let allSubMenus = document.getElementsByClassName('mdl-menu__container is-upgraded is-visible');
+        Object.keys(allSubMenus).forEach(function (key) {
+            allSubMenus[key].className = 'mdl-menu__container is-upgraded';
+        });
+    };
+
 /**
    * Handles a keyboard event on the "for" element.
    *
