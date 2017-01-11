@@ -3,6 +3,8 @@ require('styles/App.css');
 
 import React from 'react';
 import HomeContent from '../components/home/content.jsx';
+import Header from './common/Header';
+import Footer from './common/Footer';
 
 class AppComponent extends React.Component {
 
@@ -16,26 +18,7 @@ class AppComponent extends React.Component {
   render() {
     return (
       <div className="mdl-layout mdl-js-layout">
-          <header className="mdl-layout--fixed-header">
-              <div className="mdl-layout__header-row">
-                  <span className="mdl-layout-title">Menu</span>
-                  <div className="mdl-layout-spacer"></div>
-                  <div className="mdl-layout-title">Xenia Suite</div>
-                  <div className="mdl-layout-spacer"></div>
-
-                  <form action="#">
-                      <div className="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-                          <label className="mdl-button mdl-js-button mdl-button--icon" htmlFor="sample6">
-                        <i className="material-icons">search</i>
-                      </label>
-                          <div className="mdl-textfield__expandable-holder">
-                              <input className="mdl-textfield__input" type="text" id="sample6" />
-                              <label className="mdl-textfield__label" htmlFor="sample-expandable">Expandable Input</label>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-          </header>
+          <Header />
           <div className="mdl-layout__drawer">
               <div className="inline-block">
 
@@ -78,15 +61,7 @@ class AppComponent extends React.Component {
               <HomeContent />
           </main>
 
-          <footer className="mdl-mini-footer">
-              <div className="mdl-layout-spacer"></div>
-              <div className="trapezoid">
-                  <div className="innertrapezoidinner">
-                      The Software, for all Medium to Large Motels, Hotels and Hotel Groups.
-                  </div>
-              </div>
-              <div className="mdl-layout-spacer"></div>
-          </footer>
+          <Footer />
       </div>
     )
   }
