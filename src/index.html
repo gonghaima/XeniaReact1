@@ -24,7 +24,12 @@
 // layout.MaterialLayout.toggleDrawer();
 
 
+function close() {
+  var d = document.querySelector('.mdl-layout');
+  d.MaterialLayout.toggleDrawer();
+}
 
+document.querySelector('.menu-button').addEventListener('click', close);
 
 
 

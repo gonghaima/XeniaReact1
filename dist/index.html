@@ -6,8 +6,7 @@
   <title>Xenia Suite</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.red-pink.min.css">
   <!-- Material Design icon font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -24,7 +23,12 @@
 // layout.MaterialLayout.toggleDrawer();
 
 
+function close() {
+  var d = document.querySelector('.mdl-layout');
+  d.MaterialLayout.toggleDrawer();
+}
 
+document.querySelector('.menu-button').addEventListener('click', close);
 
 
 

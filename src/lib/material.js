@@ -1307,7 +1307,7 @@ MaterialMenu.prototype.handleForClick_ = function (evt) {
 };
 
 
-/** 0Edited
+/** Steven Edited
  * Reset & hide all submenus
  */
 MaterialMenu.prototype.resetSubMenu = function () {
