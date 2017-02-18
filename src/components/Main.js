@@ -1,8 +1,9 @@
 require('normalize.css/normalize.css');
 require('styles/App.css');
 
-import React from 'react';
-import HomeContent from '../components/home/content.jsx';
+import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
+import HomePage from '../components/home/HomePage.js';
 import Header from './common/Header';
 import Footer from './common/Footer';
 
@@ -34,13 +35,17 @@ class AppComponent extends React.Component {
               </div>
 
               <nav className="mdl-navigation">
-                  <a id="bookings_menu" className="mdl-navigation__link" href="#">Bookings</a>
+                  <Link className="mdl-navigation__link" href="/">Home</Link>
+                  <a className="mdl-navigation__link" href="/about">About</a>
+                  <Link className="mdl-navigation__link" href="/testimonial">Testimonials</Link>
+                  <a className="mdl-navigation__link" href="/vision">Vision</a>
+                  {/*<a id="bookings_menu" className="mdl-navigation__link" href="#">Bookings</a>
                   <a id="groups_menu" className="mdl-navigation__link" href="#">Groups</a>
                   <a className="mdl-navigation__link" href="">Functions</a>
                   <a className="mdl-navigation__link" href="">Interfaces</a>
                   <a className="mdl-navigation__link" href="">Reports</a>
                   <a className="mdl-navigation__link" href="">Company</a>
-                  <a className="mdl-navigation__link" href="">Contact</a>
+                  <a className="mdl-navigation__link" href="">Contact</a>*/}
               </nav>
           </div>
 
@@ -57,9 +62,9 @@ class AppComponent extends React.Component {
               <li disabled className="mdl-menu__item">Tour Packages</li>
           </ul>
 
-          <main className="mdl-layout__content  demo-layout-transparent">
-              <HomeContent />
-          </main>
+          
+              {this.props.children}
+          
 
           <Footer />
       </div>
@@ -68,6 +73,10 @@ class AppComponent extends React.Component {
 }
 
 AppComponent.defaultProps = {
+};
+
+AppComponent.propTypes = {
+    children: PropTypes.object.isRequired
 };
 
 export default AppComponent;
