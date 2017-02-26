@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import Footer from '../common/Footer';
 
 class HomePage extends Component {
@@ -10,9 +10,9 @@ class HomePage extends Component {
     render() {
         return (
             <div
-                className="mdl-layout__content  demo-layout-transparent"
+                className='mdl-layout__content  demo-layout-transparent'
                 style={{
-                background: `url(../images/header.png) center top`,
+                background: 'url(../images/header.png) center top',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'contain',
                 position: 'relative'

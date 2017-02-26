@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import DrawerHelper from '../common/services/DrawerHelper';
 
 class AboutPage extends Component {
     constructor(props) {
@@ -6,13 +7,16 @@ class AboutPage extends Component {
 
     }
 
+    componentDidUpdate() {
+        let drawerHelper=new DrawerHelper(document);
+        drawerHelper.toggle();
+    }
+
     render() {
         return (
-            <main className="mdl-layout__content  demo-layout-transparent" style={{background: `url(../images/about.png) center`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain'}}></main>
+            <main className='mdl-layout__content  demo-layout-transparent' style={{background: 'url(../images/about.png) center', backgroundRepeat: 'no-repeat', backgroundSize: 'contain'}}></main>
         );
     }
 }
-
-AboutPage.propTypes = {};
 
 export default AboutPage;

@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import DrawerHelper from '../common/services/DrawerHelper';
 
 class VisionPage extends Component {
     constructor(props) {
@@ -6,27 +7,22 @@ class VisionPage extends Component {
 
     }
 
-    componentWillMount() {}
-
-    componentDidMount() {}
-
-    componentWillReceiveProps(nextProps) {}
-
-    shouldComponentUpdate(nextProps, nextState) {}
-
-    componentWillUpdate(nextProps, nextState) {}
-
-    componentDidUpdate(prevProps, prevState) {}
-
-    componentWillUnmount() {}
+    componentDidUpdate() {
+        let drawerHelper=new DrawerHelper(document);
+        drawerHelper.toggle();
+    }
 
     render() {
         return (
-            <main className="mdl-layout__content  demo-layout-transparent" style={{background: `url(../images/vision.png) center`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain'}}></main>
+            <main
+                className='mdl-layout__content  demo-layout-transparent'
+                style={{
+                background: 'url(../images/vision.png) center',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'contain'
+            }}></main>
         );
     }
 }
-
-VisionPage.propTypes = {};
 
 export default VisionPage;

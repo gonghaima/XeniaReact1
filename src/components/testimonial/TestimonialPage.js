@@ -1,6 +1,5 @@
-import React, {Component, PropTypes} from 'react';
-
-
+import React, {Component} from 'react';
+import DrawerHelper from '../common/services/DrawerHelper';
 
 class TestimonialPage extends Component {
     constructor(props) {
@@ -8,22 +7,22 @@ class TestimonialPage extends Component {
 
     }
 
+    componentDidUpdate() {
+        let drawerHelper=new DrawerHelper(document);
+        drawerHelper.toggle();
+    }
+
     render() {
         return (
-            <main className="mdl-layout__content  demo-layout-transparent" style={{background: `url(../images/testimonials.png) center`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain'}}></main>
+            <main
+                className='mdl-layout__content  demo-layout-transparent'
+                style={{
+                background: 'url(../images/testimonials.png) center',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'contain'
+            }}></main>
         );
     }
 }
 
-TestimonialPage.propTypes = {};
-
-
-const styles = {
-  bgimg: {
-    background: `url(../images/testimonials.png) center`
-  },
-  bgrepeat:{
-      'background-repeat': 'no-repeat'
-  }
-};
 export default TestimonialPage;
