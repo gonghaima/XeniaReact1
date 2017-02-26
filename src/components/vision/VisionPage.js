@@ -22,7 +22,7 @@ class VisionPage extends Component {
 
     render() {
         return (
-            <main className="mdl-layout__content  demo-layout-transparent" style={{background: `url(../images/vision.png) center`, backgroundRepeat: 'no-repeat'}}></main>
+            <main className="mdl-layout__content  demo-layout-transparent" style={{background: `url(../images/vision.png) center`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain'}}></main>
         );
     }
 }

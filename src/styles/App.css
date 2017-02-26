@@ -28,10 +28,7 @@ body {
 .mdl-layout-title{
 font-family: 'Lucida Sans' ,'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
-.demo-layout-transparent {
-  /*background: url('../src/images/transparent.jpg') center / cover;*/
-  background: url('../images/header.png') left / cover;
-}
+
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if

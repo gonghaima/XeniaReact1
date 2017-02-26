@@ -8,14 +8,6 @@ import Header from './common/Header';
 import Footer from './common/Footer';
 
 class AppComponent extends React.Component {
-
-  componentWillMount() {
-
-  }
-  componentDidMount() {
-
-  }
-
   render() {
     return (
       <div className="mdl-layout mdl-js-layout">
@@ -66,7 +58,7 @@ class AppComponent extends React.Component {
               {this.props.children}
           
 
-          <Footer />
+        
       </div>
     )
   }
