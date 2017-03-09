@@ -120,3 +120,7 @@ border-bottom: 42px solid red;
 .mdl-button--fab.mdl-button--colored:hover {
     background-color: rgb(244,67,54);
 }
+
+.content-grid{
+  max-width: 960px;
+}

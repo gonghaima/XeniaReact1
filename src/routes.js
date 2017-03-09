@@ -5,6 +5,7 @@ import HomePage from './components/home/HomePage';
 import AboutPage from './components/about/AboutPage';
 import VisionPage from './components/vision/VisionPage';
 import TestimonialPage from './components/testimonial/TestimonialPage';
+import TestPage from './components/test/TestPage';
 
 export default (
   <Route path="/" component={App}>
@@ -12,5 +13,6 @@ export default (
     <Route path="about" component={AboutPage} />
     <Route path="testimonial" component={TestimonialPage} />
     <Route path="vision" component={VisionPage} />
+    <Route path="test" component={TestPage} />
   </Route>
 );

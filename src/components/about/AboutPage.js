@@ -14,7 +14,7 @@ class AboutPage extends Component {
 
     render() {
         return (
-            <main className='mdl-layout__content  demo-layout-transparent' style={{background: 'url(../images/about.png) center', backgroundRepeat: 'no-repeat', backgroundSize: 'contain'}}></main>
+            <main className='mdl-layout__content  demo-layout-transparent' style={{background: 'url(../images/about1.png) center', backgroundRepeat: 'no-repeat', backgroundSize: 'contain'}}></main>
         );
     }
 }
