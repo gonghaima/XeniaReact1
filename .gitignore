@@ -31,3 +31,9 @@ bower_components/
 
 # IDE/Editor data
 .idea
+
+# Compiled File
+dist/
+dist/assets/
+
+*.js.map
