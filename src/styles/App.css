@@ -1,4 +1,7 @@
+
 /* Base Application Styles */
+
+
 /*body {
   color: #fff;
   background: #222;
@@ -25,8 +28,8 @@ body {
   background: #000;
 }
 
-.mdl-layout-title{
-font-family: 'Lucida Sans' ,'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+.mdl-layout-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
 .demo-layout-transparent .mdl-layout__header,
@@ -35,92 +38,105 @@ font-family: 'Lucida Sans' ,'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
      your background is light. */
   color: white;
 }
-footer.mdl-mini-footer{
+
+footer.mdl-mini-footer {
   background-color: #fff;
   padding: 0;
 }
-
-.mdl-layout__header-row {
-  height: 96px;
+@media (max-width: 359px) {
+  .mdl-layout__drawer-button {
+    top: -5px;
+  }
+  .mdl-layout-title {
+    font-size: 16px;
+  }
+}
+@media (min-width: 360px) {
+  .mdl-layout__drawer-button {
+    top: -5px;
+  }
+  .mdl-layout-title {
+    font-size: 16px;
+  }
 }
 
-
-.mdl-layout__drawer-button{
-  top:15px;
+@media (min-width: 960px) {
+  .mdl-layout__drawer-button {
+    top: 15px;
+  }
+  .mdl-layout__header-row {
+    height: 96px;
+  }
+  .mdl-layout-title {
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   .mdl-layout__drawer-button {
     margin: 7px;
-     color: white;
-}
-}
-.mdl-layout__drawer{
     color: white;
-    background-color: black;
+  }
 }
 
+.mdl-layout__drawer {
+  color: white;
+  background-color: black;
+}
 
 .trapezoid {
   /*border-bottom: 140px solid;
 	border-left: 28px solid transparent;
 	height: 0;*/
-border-bottom: 42px solid red;
-    /*border-left: 16px solid transparent;
+  border-bottom: 42px solid red;
+  /*border-left: 16px solid transparent;
     border-right: 0 solid transparent;*/
-    height: 0;
-    width: 100px;
-      /*background-color: lavender;*/
-    margin: 42px 0px;
-    width: 72%;
-    
-    -webkit-transform: skew(-19deg);
-	   -moz-transform: skew(-19deg);
-	     -o-transform: skew(-19deg);
+  height: 0;
+  width: 100px;
+  /*background-color: lavender;*/
+  margin: 42px 0px;
+  width: 72%;
+  -webkit-transform: skew(-19deg);
+  -moz-transform: skew(-19deg);
+  -o-transform: skew(-19deg);
 }
 
-
-.innertrapezoidinner{
-  
-      font-size: 1.6vw;
-      
-      font-weight: bold;
-      color:white;
-    line-height: 41px;
+.innertrapezoidinner {
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: white;
+  line-height: 41px;
   border-bottom: #E22B00;
-      display: block;
-    text-align: center;
-  
+  display: block;
+  text-align: center;
 }
 
-.mdl-ripple{
+.mdl-ripple {
   transform: translate(-50%, -50%) translate(17px, 34px);
 }
 
 .mdl-button.mdl-button--colored {
-  margin:0;
-    color: rgb(244,67,54);
+  margin: 0;
+  color: rgb(244, 67, 54);
 }
 
-.mdl-button.mdl-button--colored{
-  color:white;
-  
-  background-color:black;
+.mdl-button.mdl-button--colored {
+  color: white;
+  background-color: black;
 }
 
-.margin-left-10px{
+.margin-left-10px {
   margin-left: 10px;
 }
 
-.inline-block{
+.inline-block {
   display: inline-block;
 }
 
-
 .mdl-button--fab.mdl-button--colored:hover {
-    background-color: rgb(244,67,54);
+  background-color: rgb(244, 67, 54);
 }
 
-.content-grid{
+.content-grid {
   max-width: 960px;
 }
