@@ -88,7 +88,7 @@ footer.mdl-mini-footer {
   /*border-bottom: 140px solid;
 	border-left: 28px solid transparent;
 	height: 0;*/
-  border-bottom: 42px solid red;
+  border-bottom: 42px solid #e22b00;
   /*border-left: 16px solid transparent;
     border-right: 0 solid transparent;*/
   height: 0;
@@ -96,6 +96,7 @@ footer.mdl-mini-footer {
   /*background-color: lavender;*/
   margin: 42px 0px;
   width: 72%;
+  transform: skew(-19deg);
   -webkit-transform: skew(-19deg);
   -moz-transform: skew(-19deg);
   -o-transform: skew(-19deg);
