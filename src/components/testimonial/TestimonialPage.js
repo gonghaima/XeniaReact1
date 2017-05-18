@@ -17,7 +17,7 @@ class TestimonialPage extends Component {
             <main
                 className='mdl-layout__content  demo-layout-transparent'
                 style={{
-                background: 'url(../images/testimonials.png) center',
+                background: 'url(../images/testimonials1.png) center',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'contain'
             }}></main>
