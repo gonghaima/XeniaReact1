@@ -8,7 +8,9 @@
     "copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./dist",
     "dist": "npm run copy & webpack --env=dist",
 
-    "copyprod": "ncp ./dist ./wwwroot",
+    "copyroot": "ncp ./dist ./wwwroot",
+    "copywebconfig":"copyfiles web.config ./wwwroot",
+    "copyprod":"npm run copyroot && npm run copywebconfig",
     "lint": "eslint ./src",
     "posttest": "npm run lint",
     "release:major": "npm version major && npm publish && git push --follow-tags",
