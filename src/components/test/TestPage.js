@@ -33,7 +33,7 @@ class TestPage extends Component {
                         <p>I have been managing Hotels and Motels for over 30 years and I have never had
                             support like I have received over the last 5 years from this company. It was
                             really outstanding. Day or night, summer or winter the phone is always answered
-                            with a smile in the voice and eagerness to help Thanks so much for making my job
+                            with a smile in the voice and eagerness to help. Thanks so much for making my job
                             easier
                         </p>
                         <p className='margin-0'>Gail</p>
