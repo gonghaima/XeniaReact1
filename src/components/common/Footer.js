@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = ({footer_text}) => {
     return (
         <footer
             className="mdl-mini-footer"
@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="mdl-layout-spacer"></div>
             <div className="trapezoid">
                 <div className="innertrapezoidinner">
-                    The Software, for all Medium to Large Motels, Hotels and Hotel Groups.
+                    {footer_text}
                 </div>
             </div>
             <div className="mdl-layout-spacer"></div>
