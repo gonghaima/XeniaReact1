@@ -10,4 +10,12 @@ export default class ToggleDrawerHelper{
                 .toggleDrawer();
         }
     }
+    close(){
+      var layout = this.doc.querySelector('.mdl-layout');
+      if ((layout.MaterialLayout)&&(layout.MaterialLayout.toggleDrawer)&&(typeof layout.MaterialLayout.toggleDrawer == 'function')) {
+          layout
+              .MaterialLayout
+              .ToggleDrawerHelper().close();
+      }
+  }
 }

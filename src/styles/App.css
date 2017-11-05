@@ -152,3 +152,8 @@ footer.mdl-mini-footer {
   max-width: 960px;
 }
 
+/* page specific */
+/* AboutPage */
+.about-page p{
+  text-align: justify;
+}

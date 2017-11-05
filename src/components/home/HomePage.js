@@ -5,7 +5,7 @@ class HomePage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            offset: 'test'
+            offset: 'Xinia'
         };
 
         var that= this;
@@ -14,7 +14,9 @@ class HomePage extends Component {
             return response.json();
         }).then(function (data) {
             that.setState({ offset: data.subtitle });
-        }).catch(err=>console.log(err));
+        }).catch(err=>{
+          throw new err;
+        });
     }
 
     render() {
