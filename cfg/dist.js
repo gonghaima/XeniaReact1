@@ -24,7 +24,12 @@ let config = Object.assign({}, baseConfig, {
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.DefinePlugin({
+      "process.env": {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'production') // default value if not specified
+      }
+    })
   ],
   module: defaultSettings.getDefaultModules()
 });

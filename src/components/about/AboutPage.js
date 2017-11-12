@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DrawerHelper from '../common/services/DrawerHelper';
 import renderHTML from 'react-render-html';
+import ApiService from '../common/services/ApiService';
 
 class AboutPage extends Component {
   constructor(props) {
@@ -11,8 +12,11 @@ class AboutPage extends Component {
 
     var that = this;
 
-    fetch('/contentpage')
+    let {aboutContentPromise}= ApiService();
+
+    aboutContentPromise
       .then(function(response) {
+        debugger
         return response.text();
       })
       .then(function(data) {

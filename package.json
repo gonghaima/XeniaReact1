@@ -14,9 +14,10 @@
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "serve": "node server.js --env=dev",
     "serve:dist": "node server.js --env=dist",
-    "start": "node server.js --env=dev",
+    "start": "SET NODE_ENV=development && node server.js --env=dev",
     "test": "karma start",
-    "test:watch": "karma start --autoWatch=true --singleRun=false"
+    "test:watch": "karma start --autoWatch=true --singleRun=false",
+    "api": "json-server --watch db.json --port 3004"
   },
   "repository": "",
   "keywords": [],
@@ -39,6 +40,7 @@
     "file-loader": "^0.9.0",
     "glob": "^7.0.0",
     "isparta-instrumenter-loader": "^1.0.0",
+    "json-server": "^0.12.1",
     "karma": "^1.0.0",
     "karma-chai": "^0.1.0",
     "karma-coverage": "^1.0.0",

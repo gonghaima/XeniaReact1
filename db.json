@@ -1,0 +1,22 @@
+{
+  "foo-fest": {
+    "events": [
+      {
+        "title": "Cool Title",
+        "description": "So Cool",
+        "event": "Saturday, April 9, 2016, 12 - 1pm",
+        "tags": "cool"
+      },
+      {
+        "title": "Awesom Title",
+        "description": "So Awesome",
+        "event": "Sunday, April 10, 2016, 12 - 1pm",
+        "tags": "awesome"
+      }
+    ]
+  },
+  "footer": {
+    "subtitle":
+      "The Software, for all Medium to Large Motels, Hotels and Hotel Groups."
+  }
+}

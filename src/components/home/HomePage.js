@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Footer from '../common/Footer';
+import ApiService from '../common/services/ApiService';
 
 class HomePage extends Component {
     constructor(props) {
@@ -7,16 +8,16 @@ class HomePage extends Component {
         this.state = {
             offset: 'Xinia'
         };
+        var that=this;
+let {footerUrl}= ApiService();
+fetch(footerUrl).then(function (response) {
+  return response.json();
+}).then(function (data) {
+  that.setState({ offset: data.subtitle });
+}).catch(err=>{
+throw new err;
+});
 
-        var that= this;
-
-        fetch('/people').then(function (response) {
-            return response.json();
-        }).then(function (data) {
-            that.setState({ offset: data.subtitle });
-        }).catch(err=>{
-          throw new err;
-        });
     }
 
     render() {
