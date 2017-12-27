@@ -3,8 +3,9 @@ const ApiService = () => {
   let footerUrl = '/footer';
   let baseUrl = '';
   let aboutContentPromise= fetch('/contentpage');
+  let testimonialContentPromise= fetch('/endorsement');
 
-  //api return a promise, which the response.text() is a function return another promise
+  //about api return a promise, which the response.text() is a function return another promise
   let respTextPromise = {};
   respTextPromise.text= function(){
     return new Promise(function(resolve, reject){
@@ -21,10 +22,24 @@ const ApiService = () => {
   });
 
 
+  //testimonial api return a promise, which the response.text() is a function return another promise
+  let testimonialTextPromise = {};
+  testimonialTextPromise.json= function(){
+    return new Promise(function(resolve, reject){
+      resolve({"items":[{"top":"\u003cp\u003eI have been managing Hotels and Motels for over 30 years and I have never had support like I have received over the last 5 years from this company. It was really outstanding. Day or night, summer or winter the phone is always answered with a smile in the voice and eagerness to help. Thanks so much for making my job easier\u003c/p\u003e\n\u003cp class=\"margin-0\"\u003eGail\u003c/p\u003e\n\u003cp class=\"margin-0\"\u003eHotel Manager\u003c/p\u003e\n\u003cp class=\"margin-0\"\u003eWellington\u003c/p\u003e","bottom":"\u003cp\u003eIt was 9 o’clock at night, the Hotel was full, storms everywhere, then lightening struck and the power surge took out all of our computers. The Server would not start up. So put out an SOS to support expecting them to reply with a promise of help the next day. Instead 3 and half hours later the support staff turned up with a temporary Server in the car. Checked out our gear then pulled the power supply out of their temporary unit, put it into our Server and had us back up and running by 4:00 am. Then had a coffee with us while the Night Audit ran. Once that was done, they left to drive back home, through the storm.\u003c/p\u003e\n\u003cp class=\"margin-0\"\u003eMark\u003c/p\u003e\n\u003cp class=\"margin-0\"\u003eMotel Manager\u003c/p\u003e\n\u003cp class=\"margin-0\"\u003eManawatu\u003c/p\u003e"}]});
+    });
+  };
+
+  let testimonialContentPromiseMock=new Promise(function(rsv, rej){
+    rsv(testimonialTextPromise);
+  });
+
+
   switch (nodeEnv) {
     case 'development':
       baseUrl = 'http://localhost:3004';
       aboutContentPromise = aboutContentPromiseMock;
+      testimonialContentPromise = testimonialContentPromiseMock;
       break;
     case 'production':
       break;
@@ -34,7 +49,7 @@ const ApiService = () => {
 
   footerUrl = baseUrl + footerUrl;
 
-  return { footerUrl, aboutContentPromise };
+  return { footerUrl, aboutContentPromise, testimonialContentPromise};
 };
 
 export default ApiService;

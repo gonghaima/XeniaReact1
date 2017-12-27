@@ -29,7 +29,7 @@ function close() {
   d.MaterialLayout.toggleDrawer();
 }
 
-document.querySelector('.menu-button').addEventListener('click', close);
+if(document.querySelector('.menu-button'))document.querySelector('.menu-button').addEventListener('click', close);
 
 
 

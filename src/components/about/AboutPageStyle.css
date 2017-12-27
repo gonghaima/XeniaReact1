@@ -1,0 +1,22 @@
+.main{
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+  background-color: #262626 !important;
+  font-family: Calibri !important;
+}
+.about-page-img-container{
+  display: inline-block;
+  text-align: center;
+}
+
+.about-page-text-wrapper{
+  padding: 0 20px;
+}
+
+.about-bg-img{
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #262626;
+  font-family: Calibri;
+}
