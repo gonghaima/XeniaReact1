@@ -157,3 +157,11 @@ footer.mdl-mini-footer {
 .about-page p{
   text-align: justify;
 }
+
+.slick-dots li button:before{
+  color: #978f8f;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
