@@ -1,6 +1,17 @@
 img{
     height: 673px;
 }
+.slick-track img {
+  cursor: move; /* fallback: no `url()` support or images disabled */
+  cursor: -webkit-grab; /* Chrome 1-21, Safari 4+ */
+  cursor:    -moz-grab; /* Firefox 1.5-26 */
+  cursor:         grab; /* W3C standards syntax, should come least */
+}
+.slick-track img:active {
+  cursor: -webkit-grabbing;
+  cursor:    -moz-grabbing;
+  cursor:         grabbing;
+}
 h3 {
     background: blue;
     color: #fff;
