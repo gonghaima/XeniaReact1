@@ -68,6 +68,7 @@
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
     "react-mdl": "^1.9.0",
+    "react-popup": "^0.9.3",
     "react-render-html": "^0.5.2",
     "react-router": "^3.0.2",
     "react-slick": "^0.23.1",

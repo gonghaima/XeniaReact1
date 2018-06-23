@@ -1,5 +1,6 @@
 require('normalize.css/normalize.css');
 require('styles/App.css');
+require('styles/popup.css');
 
 import React, {Component, PropTypes} from 'react';
 import {Link} from 'react-router';
@@ -9,7 +10,7 @@ import DrawerHelper from './common/services/DrawerHelper';
 class AppComponent extends Component {
     constructor(props) {
         super(props);
-    }Footer
+    }
 
     componentDidUpdate() {
         let drawerHelper=new DrawerHelper(document);

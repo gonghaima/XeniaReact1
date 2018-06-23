@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Footer from '../common/Footer';
 import ApiService from '../common/services/ApiService';
+import Popup from 'react-popup';
 
 class HomePage extends Component {
     constructor(props) {
@@ -20,6 +21,10 @@ throw new err;
 
     }
 
+    componentDidMount(){
+        Popup.alert('Come see us at E25');
+    }
+
     render() {
         return (
             <div
@@ -30,6 +35,7 @@ throw new err;
                     backgroundSize: 'contain',
                     position: 'relative'
                 }}>
+                <Popup />
                 <Footer footer_text={this.state.offset} />
             </div>
         );
