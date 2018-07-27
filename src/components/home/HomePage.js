@@ -22,7 +22,7 @@ throw new err;
     }
 
     componentDidMount(){
-        Popup.alert('Come see us at E25');
+        Popup.alert('Let\'s talk today');
     }
 
     render() {

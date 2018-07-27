@@ -90,9 +90,9 @@
     }
 
     .mm-popup__box {
-        width: 650px;
+        width: 566px;
         position: fixed;
-        top: 25%;
+        top: 5%;
         left: 42%;
         margin-left: -175px;
        
@@ -134,11 +134,11 @@
 
         .mm-popup__box__footer {
             overflow: hidden;
-            background: url('../images/NV_SocialShare.png');
+            background: url('../images/xbro.jpg');
             background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-    height: 342px;
+    height: 800px;
             /* padding: 40px 20px 20px; */
         }
 
